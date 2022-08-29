@@ -1,3 +1,21 @@
-p {
-    color: aqua;
+/* Fonts */
+
+/* Common Styles or Utilities */
+body {
+    margin: 0;
+}
+.flex-container {
+    display: flex;
+}
+
+/* Top Banner */
+.top-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.top-banner {
+    width: 800px;
+    /* height: 646px; */
+    background-color: #8ac2ef;
 }
