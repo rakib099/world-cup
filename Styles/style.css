@@ -213,9 +213,32 @@ footer hr {
 @media screen and (max-width: 688px) {
     .top-section {
         align-items: center;
+        margin-bottom: 48px;
     }
     .top-banner {
-        background-color: aquamarine;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: column;
+    }
+    .banner-title, .banner-text {
+        text-align: center;
+    }
+    .banner-title {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .banner-text {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .top-banner .half-width img {
+        width: 83%;
+        position: relative;
+        top: 6px;
+        margin-top: 20px;
     }
     .container {
         width: 100%;
@@ -230,5 +253,18 @@ footer hr {
     }
     .blogs {
         grid-template-columns: repeat(1, 1fr);
+    }
+    footer {
+        width: 100%;
+        height: auto;
+    }
+    .foot-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .icon-links {
+        padding-top: 20px;
+        padding-bottom: 30px;
     }
 }
