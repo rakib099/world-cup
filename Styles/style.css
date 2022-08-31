@@ -72,6 +72,8 @@ body {
 main {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 .container {
     /* border: 2px solid purple; */
@@ -160,6 +162,10 @@ main {
     align-items: center;
     gap: 10px;
 }
+/* Extra Button (only for tablet) */
+.extra-button {
+    display: none;
+}
 
 /* Footer Styles */
 footer {
@@ -213,37 +219,62 @@ footer hr {
 @media screen and (max-width: 688px) {
     .top-section {
         align-items: center;
-        margin-bottom: 48px;
+        margin-top: 36px;
+        margin-bottom: 16px;
     }
     .top-banner {
         align-items: center;
-        width: 334px;
+        width: 259px;
         height: auto;
         margin-left: auto;
         margin-right: auto;
         flex-direction: column;
     }
+    .half-width {
+        width:auto;
+        padding-left: 0;
+    }
+    .banner-info {
+        padding-top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     .banner-title, .banner-text {
         text-align: center;
     }
     .banner-title {
-        font-size: 25px;
-        line-height: 30px;
+        font-size: 22px;
+        line-height: 33px;
+        margin-top: 29px;
+        margin-bottom: 8px;
     }
     .banner-text {
-        overflow: hidden;
-        text-overflow: ellipsis;
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 20px;
+    }
+    .link-button {
+        width: auto;
+        height: auto;
+        padding: 14px 22px;
+    }
+    .banner-image {
+        display: flex;
+        justify-content: center;
     }
     .top-banner .half-width img {
-        width: 83%;
-        position: relative;
-        top: 6px;
+        width: 88%;
         margin-top: 20px;
+        position: relative;
+        top: 0px;
+        left: 13px;
     }
     .container {
         width: 100%;
         flex-direction: column;
         align-items: center;
+        margin-bottom: 100px;
     }
     .side-links {
         background-color: white;
@@ -308,10 +339,14 @@ footer hr {
         width: 102%;
         top: 76px;
     }
+    main {
+        padding-bottom: 60px;
+    }
     .container {
         width: 100%;
         flex-direction: column;
         align-items: center;
+        margin-bottom: 50px;
     }
     .side-links {
         background-color: white;
@@ -330,6 +365,13 @@ footer hr {
         grid-template-columns: repeat(2, 1fr);
         margin-left: 0;
         gap: 25px;
+    }
+    #last-blog {
+        display: none;
+    }
+    /* Extra Button */
+    .extra-button {
+        display: block;
     }
     footer {
         width: 100%;
@@ -356,4 +398,3 @@ footer hr {
         padding-bottom: 75px;
     }
 }
-/* comment */
