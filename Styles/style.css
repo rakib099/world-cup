@@ -217,7 +217,7 @@ footer hr {
     }
     .top-banner {
         align-items: center;
-        width: 100%;
+        width: 334px;
         height: auto;
         margin-left: auto;
         margin-right: auto;
@@ -269,8 +269,8 @@ footer hr {
         gap: 20px;
     }
     .icon-links {
-        padding-top: 20px;
-        padding-bottom: 30px;
+        padding-top: 31px;
+        padding-bottom: 45px;
     }
 }
 
@@ -334,6 +334,26 @@ footer hr {
     footer {
         width: 100%;
         height: auto;
+    }
+    .foot-info {
+        padding-top: 35px;
+    }
+    .foot-info h2 {
+        line-height: 45px;
+    }
+    .foot-links-container {
+        display: flex;
+        justify-content: center;
+    }
+    .foot-links {
+        width: 655px;
+        column-gap: 66px;
+        row-gap: 20px;
+        flex-wrap: wrap;
+    }
+    .icon-links {
+        padding-top: 50px;
+        padding-bottom: 75px;
     }
 }
 /* comment */
