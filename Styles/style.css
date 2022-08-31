@@ -253,6 +253,11 @@ footer hr {
     }
     .blogs {
         grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        margin-left: 0;
+    }
+    .blog {
+        width: 300px;
     }
     footer {
         width: 100%;
@@ -274,6 +279,35 @@ footer hr {
     .top-section {
         margin-bottom: 50px;
     }
+    .top-banner {
+        width: 650px;
+        height: 414px;
+    }
+    .half-width {
+        padding-left: 3%;
+    }
+    .banner-info {
+        padding-top: 0;
+    }
+    .banner-title {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .banner-text {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .link-button {
+        font-size: 18px;
+        padding: 12px 15px;
+    }
+    .banner-image {
+        padding-left: 0;
+    }
+    .top-banner .half-width img {
+        width: 102%;
+        top: 76px;
+    }
     .container {
         width: 100%;
         flex-direction: column;
@@ -294,6 +328,8 @@ footer hr {
 }
     .blogs {
         grid-template-columns: repeat(2, 1fr);
+        margin-left: 0;
+        gap: 25px;
     }
     footer {
         width: 100%;
