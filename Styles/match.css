@@ -68,7 +68,24 @@ body {
     top: 36px;
 }
 
-/* Main Section */
+/* Animation */
+@keyframes sliding {
+    0% {
+        transform: translate(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
+.sliding {
+    animation: sliding 1.5s ease-in normal;
+}
+
+/* -------------
+  Main Section 
+--------------*/
 main {
     display: flex;
     justify-content: center;
